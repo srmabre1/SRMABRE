@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srmabre Sender - Mautasim</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); width: 90%; max-width: 350px; }
+        h2 { color: #075E54; text-align: center; margin-bottom: 20px; }
+        input, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
+        button { width: 100%; background-color: #25D366; color: white; padding: 12px; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; }
+        .footer { text-align: center; font-size: 11px; color: #777; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Srmabre Sender</h2>
+        <form action="/schedule" method="post">
+            <input type="text" name="phone" placeholder="Recipient Number (+92...)" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <label style="font-size: 12px; color: #666;">Schedule Date & Time:</label>
+            <input type="datetime-local" name="time" required>
+            <button type="submit">Schedule Now</button>
+        </form>
+        <div class="footer">Created by Mautasim</div>
+    </div>
+</body>
+</html>
